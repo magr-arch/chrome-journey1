@@ -1,6 +1,6 @@
-## Celsius to Fahrenheit Python Excersise
-## MAGR
-## 04/11/2026
+# Temperature Convertor Python Exercise
+# MAGR
+# 04/11/2026
 """
 celsius to fahrenheit Formula
 
