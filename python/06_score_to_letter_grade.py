@@ -2,9 +2,19 @@
 # MAGR ^-^
 # 2026-11-07
 
-"""
+"""Report the Letter Grade of any Inputted Score
 
+The relation for score to letter grade is the next
 
+Score	  | Grade
+----------|----------
+90-100	  |   A
+80-89.99  |   B
+70-79.99  |	  C
+60-69.99  |	  D
+below 60  |	  F
+
+If any score above 100 or below 0 is inputted it will be and invalid score
 """
 
 score = float(input("Enter your score (0-100): "))
