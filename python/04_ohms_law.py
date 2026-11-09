@@ -26,9 +26,13 @@ print("-" * 40)
 voltage = float(input("Voltage (V): "))
 resistance = float(input("Resistance (ohm's): "))
 
-current = voltage / resistance  # amperes
-current_ma = current * MILLIAMPS_PER_AMP
-
-print("-" * 40)
-print(f"Current: {current:.4f} A")
-print(f"Current: {current_ma:.2f} mA")
+if resistance == 0:
+    print("Short circuit (resitance cannot be 0)")
+elif resistance < 0:
+    print("Invalid resitance")
+else:
+    current = voltage / resistance  # amperes
+    current_ma = current * MILLIAMPS_PER_AMP
+    print("-" * 40)
+    print(f"Current: {current:.4f} A")
+    print(f"Current: {current_ma:.2f} mA")
